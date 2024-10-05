@@ -28,6 +28,12 @@
     <li>ejecutar el comando <code>npm run dev </code> </li>
     <li>dirigiese a la url proporcionado para visualizar el proyecto </li>
   </ol>
+  <p> <strong>Nota:</strong> las credenciales validas para inicio de seccion son :
+      <ul>
+        <li> <strong>Correo:</strong>example@gmail.com </br>  <strong>Contraseña:</strong>12345678A$</li>
+        <li> <strong>Correo:</strong> notexample@gmail.com </br> <strong>Contraseña:</strong> 87654321A$</li>
+      </ul>
+  </p>
   <h2>Back:</h2> 
   <ol>
     <li>dirigirse a la carpeta back que se encuentra al clonar el repositorio</li>
