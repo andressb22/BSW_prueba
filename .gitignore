@@ -1,0 +1,3 @@
+#no subir los modulos
+/front/node_modules
+/back/node_modules

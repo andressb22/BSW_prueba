@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login BSW</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/login.css" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon"> 
+  </head>
+  <body>
+    <div id="Modal" class="Modal">
+      <div>
+        <div id="modalIco" class="modalIco"></div>
+        <div class="modalText">
+          <p id="textModal"></p>
+        </div>
+        <div>
+          <button id="buttonModal">Accept</button>
+        </div>
+      </div>
+    </div>
+    <div class="contLogin">
+      <div class="contImagesLogin">
+        <div class="slider" id="slider">
+          <div class="slide">
+            <img src="./images/nigthSky.webp" />
+          </div>
+          <div class="slide">
+            <img src="./images/nigthSky2.webp" />
+          </div>
+          <div class="slide">
+            <img src="./images/nigthSky3.webp" />
+          </div>
+        </div>
+        <div class="contIndexImage">
+          <div class="decorator" id="deco0"></div>
+          <div class="decorator" id="deco1"></div>
+          <div class="decorator" id="deco2"></div>
+        </div>
+
+        <div>
+          <svg
+            width="199"
+            height="199"
+            viewBox="0 0 199 199"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_17_13)">
+              <mask
+                id="mask0_17_13"
+                style="mask-type: luminance"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="199"
+                height="199"
+              >
+                <path d="M199 0H0V199H199V0Z" fill="white" />
+              </mask>
+              <g mask="url(#mask0_17_13)">
+                <path
+                  d="M91.2878 9.04186C110.066 -2.98521 124.262 3.11424 129.353 5.06326C167.532 19.6729 153.867 61.4507 135.776 83.1427C107.7 116.803 15.9014 182.624 4.41992 106.912C43.8701 116.701 77.3384 95.9215 109.051 57.918C135.379 26.363 119.675 2.84041 80.5199 15.4205L91.2878 9.04724V9.04186Z"
+                  fill="white"
+                />
+                <path
+                  d="M159.174 19.6729C211.903 87.4918 95.0384 172.562 37.5396 165.85C74.1623 199.236 116.585 177.367 150.058 147.256C201.279 101.194 205.958 56.3289 159.174 19.6729Z"
+                  fill="white"
+                />
+                <path
+                  d="M198.999 106.907C180.618 159.117 144.698 191.751 87.135 198.157C149.189 206.028 195.845 157.598 198.999 106.907Z"
+                  fill="white"
+                />
+                <path
+                  d="M90.929 11.4258C67.4937 39.6197 152.575 135.203 198.994 106.912C190.786 213.207 -18.1722 23.5227 80.9924 1.81486C80.9924 1.81486 102.212 -2.68456 121.027 2.47527C121.027 2.47527 97.6945 3.2914 90.929 11.4258Z"
+                  fill="white"
+                />
+                <path
+                  d="M44.3862 16.9453C0.439974 73.4728 99.8567 169.786 174.814 164.739C145.112 202.597 88.5093 177.625 54.4459 146.999C3.22451 100.947 -5.6066 50.9435 44.3862 16.9453Z"
+                  fill="white"
+                />
+                <path
+                  d="M1.97919 82.0527C7.77896 146.279 47.6208 193.491 120.115 196.944C40.9734 211.575 -10.9831 140.47 1.97919 82.0527Z"
+                  fill="white"
+                />
+              </g>
+            </g>
+            <defs>
+              <clipPath id="clip0_17_13">
+                <rect width="199" height="199" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <p>
+          Explore the world with our interactive maps. Find routes, places, and
+          everything you need with ease. Start your adventure today!
+        </p>
+      </div>
+      <div class="Login">
+        <div>
+          <h1>Log User</h1>
+          <h2>Welcome</h2>
+        </div>
+
+        <form id="formLogin" onsubmit="handleSubmit">
+          <div class="contInput">
+            <input
+              name="email"
+              id="email"
+              class="inputLogin"
+              type="text"
+              placeholder="Email"
+            />
+            <span></span>
+          </div>
+          <div class="contInput">
+            <div class="passwordIco">
+              <svg
+                width="25"
+                viewBox="0 0 577 448"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="activeIco"
+                id="activePassword"
+              >
+                <path
+                  d="M287.975 0C207.175 0 142.475 36.8 95.375 80.6C48.575 124 17.275 176 2.475 211.7C-0.825 219.6 -0.825 228.4 2.475 236.3C17.275 272 48.575 324 95.375 367.4C142.475 411.2 207.175 448 287.975 448C368.775 448 433.475 411.2 480.575 367.4C527.375 323.9 558.675 272 573.575 236.3C576.875 228.4 576.875 219.6 573.575 211.7C558.675 176 527.375 124 480.575 80.6C433.475 36.8 368.775 0 287.975 0ZM143.975 224C143.975 185.809 159.146 149.182 186.152 122.177C213.157 95.1714 249.784 80 287.975 80C326.166 80 362.793 95.1714 389.798 122.177C416.804 149.182 431.975 185.809 431.975 224C431.975 262.191 416.804 298.818 389.798 325.823C362.793 352.829 326.166 368 287.975 368C249.784 368 213.157 352.829 186.152 325.823C159.146 298.818 143.975 262.191 143.975 224ZM287.975 160C287.975 195.3 259.275 224 223.975 224C216.875 224 210.075 222.8 203.675 220.7C198.175 218.9 191.775 222.3 191.975 228.1C192.275 235 193.275 241.9 195.175 248.8C208.875 300 261.575 330.4 312.775 316.7C363.975 303 394.375 250.3 380.675 199.1C369.575 157.6 332.875 129.7 292.075 128C286.275 127.8 282.875 134.1 284.675 139.7C286.775 146.1 287.975 152.9 287.975 160Z"
+                  fill="white"
+                />
+              </svg>
+              <svg
+                id="hiddenPassword"
+                width="25"
+                class="disabelIco"
+                viewBox="0 0 641 513"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M38.8056 5.10562C28.4056 -3.09438 13.3056 -1.19438 5.10562 9.20562C-3.09438 19.6056 -1.19438 34.7056 9.20562 42.9056L601.206 506.906C611.606 515.106 626.706 513.206 634.906 502.806C643.106 492.406 641.206 477.306 630.806 469.106L525.606 386.706C565.206 346.106 592.006 300.606 605.506 268.306C608.806 260.406 608.806 251.606 605.506 243.706C590.606 208.006 559.306 156.006 512.506 112.606C465.506 68.8056 400.806 32.0056 320.006 32.0056C251.806 32.0056 195.006 58.3056 150.706 92.8056L38.8056 5.10562ZM223.106 149.506C248.606 126.206 282.706 112.006 320.006 112.006C399.506 112.006 464.006 176.506 464.006 256.006C464.006 280.906 457.706 304.306 446.606 324.706L408.006 294.506C416.406 275.206 418.606 253.106 412.806 231.206C401.706 189.706 365.006 161.806 324.206 160.106C318.406 159.906 315.006 166.206 316.806 171.806C318.906 178.206 320.106 185.006 320.106 192.106C320.106 202.306 317.706 211.906 313.506 220.406L223.206 149.606L223.106 149.506ZM373.006 389.906C356.606 396.406 338.706 400.006 320.006 400.006C240.506 400.006 176.006 335.506 176.006 256.006C176.006 249.106 176.506 242.406 177.406 235.806L83.1056 161.506C60.3056 191.206 44.0056 220.806 34.5056 243.706C31.2056 251.606 31.2056 260.406 34.5056 268.306C49.4056 304.006 80.7056 356.006 127.506 399.406C174.506 443.206 239.206 480.006 320.006 480.006C367.806 480.006 409.906 467.106 446.206 447.506L373.006 389.906Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+
+            <input
+              name="password"
+              id="Password"
+              class="inputLogin"
+              type="password"
+              placeholder="Password"
+            />
+            <span></span>
+          </div>
+          <button id="buttonLogin" type="submit">Log in</button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="./src/login.js"></script>
+    <script type="module" src="./src/Modal.js"></script>
+  </body>
+</html>

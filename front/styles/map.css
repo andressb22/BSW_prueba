@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+  }
+  body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #585a6d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  h1{
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+
+  .contTitle{
+    width: 70vw;
+  }
+
+  .contLogOut{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+
+  .contLogOut > button{
+    background-color: #6e54b5;
+    width: 200px;
+    color: #fff;
+    height: 40px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+  #map {
+    height: 75vh;
+    width: 70vw;
+  }
+
+
+  @media (max-width: 1000px) {
+    .contTitle{
+      width: 85vw;
+    }
+  
+    #map {
+      height: 75vh;
+      width: 85vw;
+    }
+  }

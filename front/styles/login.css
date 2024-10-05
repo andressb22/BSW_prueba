@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #585a6d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  color: #c5c5c5;
+  font-size: 18px;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
+.activeIco {
+  display: flex;
+}
+
+.contInput {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.contInput span {
+  font-size: 12px;
+  color: #d32f2f;
+  margin-top: 4px;
+}
+
+.contImagesLogin {
+  position: relative;
+  overflow: hidden;
+}
+
+.contImagesLogin svg {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  box-sizing: content-box;
+}
+
+.contImagesLogin > p {
+  position: absolute;
+  bottom: 70px;
+  color: #fff;
+  text-align: center;
+  padding: 0 70px;
+  font-weight: 600;
+}
+
+.contIndexImage {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.decorator {
+  height: 4px;
+  min-width: 25px;
+  background-color: #ffffff80;
+  border-radius: 4px;
+}
+
+.contLogin {
+  width: 60vw;
+  max-width: 1300px;
+  height: 70vh;
+  display: grid;
+  background-color: #21222a;
+  padding: 20px;
+  border-radius: 16px;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 15px 15px 60px rgba(0, 0, 0, 0.35),
+    -15px -15px 60px rgba(0, 0, 0, 0.35);
+}
+
+.contLogin img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.disabelIco {
+  display: none;
+}
+
+.loader {
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #ffffff00;
+  border-left: 2px solid #ffffff00;
+  border-right: 2px solid #ffffff00;
+  animation: loader 600ms linear infinite;
+}
+
+.Login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 60px;
+}
+
+.Login > div,
+.Login form {
+  width: 100%;
+}
+
+.Login input[type="text"],
+.Login input[type="password"] {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background-color: #434452 /*#353744*/;
+  padding-left: 25px;
+  font-size: 18px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+.Login button {
+  width: 100%;
+  height: 50px;
+  background-color: #6e54b5;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100000;
+}
+
+.Modal > div {
+  width: 40vw;
+  background-color: #21222a;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.Modal > div > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Modal > div svg {
+  width: 35%;
+}
+
+.Modal > div button {
+  background-color: #6e54b5;
+  width: 50%;
+  color: #fff;
+  height: 40px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.modalIco {
+  margin-bottom: 40px;
+}
+
+.modalText {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.passwordIco {
+  position: absolute;
+  right: 14px;
+  top: 16px;
+  z-index: 1000;
+  cursor: pointer;
+}
+.slide {
+  min-width: 100%;
+  max-height: 900px;
+  position: relative;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+@media (max-width: 1000px) {
+  .contLogin {
+    width: 90vw;
+    max-width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 80px 0;
+  }
+  .contImagesLogin > p {
+    font-size: 12px;
+    padding: 0 30px;
+  }
+  .contLogin img {
+    min-height: 330px;
+  }
+
+  .Login {
+    padding: 30px 0px;
+  }
+  .Modal > div {
+    width: 82vw;
+  }
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
